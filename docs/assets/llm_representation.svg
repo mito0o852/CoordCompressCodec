@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+  <title id="title">Coordinate-token training for LLMs</title>
+  <desc id="desc">A training corpus is encoded into fewer coordinate tokens, a model trains on that shorter stream, and generated coordinate tokens decode back to normal text.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#25324d"/>
+    </marker>
+    <style>
+      .bg { fill: #f7f9fc; }
+      .box { fill: #ffffff; stroke: #25324d; stroke-width: 2; rx: 12; }
+      .coord { fill: #eef8ef; stroke: #2f855a; stroke-width: 2; rx: 12; }
+      .model { fill: #f0edff; stroke: #6b46c1; stroke-width: 2; rx: 12; }
+      .title { font: 700 22px Arial, sans-serif; fill: #172033; }
+      .label { font: 700 17px Arial, sans-serif; fill: #172033; }
+      .small { font: 14px Arial, sans-serif; fill: #4a5568; }
+      .code { font: 14px "SFMono-Regular", Consolas, monospace; fill: #172033; }
+      .arrow { stroke: #25324d; stroke-width: 2.5; marker-end: url(#arrow); fill: none; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1200" height="470"/>
+  <text class="title" x="40" y="45">LLM Use Case: Train On Fewer Coordinate Tokens</text>
+
+  <rect class="box" x="50" y="95" width="275" height="135"/>
+  <text class="label" x="85" y="132">Training Corpus</text>
+  <text class="small" x="85" y="160">normal documents, logs, code</text>
+  <text class="code" x="85" y="194">GET /api/users HTTP/1.1</text>
+
+  <path class="arrow" d="M330 162 H420"/>
+  <rect class="coord" x="430" y="95" width="285" height="135"/>
+  <text class="label" x="465" y="132">Compressed Tokens</text>
+  <text class="small" x="465" y="160">fewer training targets</text>
+  <text class="code" x="465" y="194">C900 C42 C901</text>
+
+  <path class="arrow" d="M720 162 H810"/>
+  <rect class="model" x="820" y="95" width="300" height="135"/>
+  <text class="label" x="855" y="132">LLM Training</text>
+  <text class="small" x="855" y="160">predict coordinate IDs</text>
+  <text class="small" x="855" y="188">shorter sequences per corpus</text>
+
+  <path class="arrow" d="M970 235 V305 H720"/>
+  <rect class="coord" x="430" y="285" width="285" height="120"/>
+  <text class="label" x="465" y="322">Generated Tokens</text>
+  <text class="small" x="465" y="350">model emits coordinate IDs</text>
+  <text class="code" x="465" y="378">C902 C61 C257</text>
+
+  <path class="arrow" d="M425 345 H325"/>
+  <rect class="box" x="50" y="285" width="275" height="120"/>
+  <text class="label" x="85" y="322">Decoded Text</text>
+  <text class="small" x="85" y="350">exact expansion through universe</text>
+  <text class="code" x="85" y="378">POST /api/orders ...</text>
+
+  <text class="small" x="795" y="330">V1 measures token-count reduction.</text>
+  <text class="small" x="795" y="355">The training experiment asks whether</text>
+  <text class="small" x="795" y="380">the shorter stream remains learnable.</text>
+</svg>

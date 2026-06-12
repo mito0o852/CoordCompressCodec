@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="460" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
+  <title id="title">Coordinate universe recursion</title>
+  <desc id="desc">Coordinate IDs store exact expansions and later layers may reference earlier coordinates.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#25324d"/>
+    </marker>
+    <style>
+      .bg { fill: #f7f9fc; }
+      .panel { fill: #ffffff; stroke: #25324d; stroke-width: 2; rx: 12; }
+      .l1 { fill: #e9f4ff; stroke: #1d72b8; stroke-width: 2; rx: 10; }
+      .l2 { fill: #eef8ef; stroke: #2f855a; stroke-width: 2; rx: 10; }
+      .bytes { fill: #fff5e8; stroke: #bf6f13; stroke-width: 2; rx: 10; }
+      .title { font: 700 22px Arial, sans-serif; fill: #172033; }
+      .label { font: 700 17px Arial, sans-serif; fill: #172033; }
+      .small { font: 14px Arial, sans-serif; fill: #4a5568; }
+      .code { font: 15px "SFMono-Regular", Consolas, monospace; fill: #172033; }
+      .arrow { stroke: #25324d; stroke-width: 2.5; marker-end: url(#arrow); fill: none; }
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="1200" height="460"/>
+  <text class="title" x="40" y="45">How The Coordinate Universe Works</text>
+
+  <rect class="panel" x="55" y="90" width="320" height="300"/>
+  <text class="label" x="90" y="130">Base Layer</text>
+  <text class="small" x="90" y="158">Every byte is already a token.</text>
+  <rect class="bytes" x="90" y="190" width="240" height="56"/>
+  <text class="code" x="115" y="225">71 69 84 32 47 97 ...</text>
+  <text class="small" x="90" y="285">This makes arbitrary input lossless.</text>
+
+  <path class="arrow" d="M382 235 H455"/>
+  <rect class="panel" x="465" y="90" width="320" height="300"/>
+  <text class="label" x="500" y="130">Layer 1 Nodes</text>
+  <text class="small" x="500" y="158">Coordinates fold repeated byte spans.</text>
+  <rect class="l1" x="500" y="190" width="240" height="56"/>
+  <text class="code" x="525" y="225">C256 -> GET /api/</text>
+  <rect class="l1" x="500" y="260" width="240" height="56"/>
+  <text class="code" x="525" y="295">C257 -> HTTP/1.1</text>
+
+  <path class="arrow" d="M792 235 H865"/>
+  <rect class="panel" x="875" y="90" width="320" height="300"/>
+  <text class="label" x="910" y="130">Layer 2 Nodes</text>
+  <text class="small" x="910" y="158">Coordinates can fold coordinates.</text>
+  <rect class="l2" x="910" y="190" width="250" height="56"/>
+  <text class="code" x="930" y="225">C900 -> C256 users C257</text>
+  <rect class="l2" x="910" y="260" width="250" height="56"/>
+  <text class="code" x="930" y="295">C901 -> C256 orders C257</text>
+
+  <path class="arrow" d="M1035 320 V410 H215 V398"/>
+  <text class="small" x="430" y="425">Decode recursively expands C900 -> C256 users C257 -> original bytes.</text>
+</svg>
