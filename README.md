@@ -1,4 +1,26 @@
+<div align="center">
+
 # CoordCompressCodec
+
+### Lossless recursive coordinate compression for text and structured bytes.
+
+Learn recurring structure. Map it into compact coordinate symbols. Decode back
+to the exact original bytes.
+
+<p>
+  <a href="LICENSE"><img alt="License: Non-Commercial" src="https://img.shields.io/badge/license-non--commercial-0f766e"></a>
+  <img alt="Python 3.10+" src="https://img.shields.io/badge/python-3.10%2B-2563eb">
+  <img alt="Exact decode" src="https://img.shields.io/badge/decode-exact-7c3aed">
+  <img alt="Codec" src="https://img.shields.io/badge/codec-DCC1-ee4c2c">
+  <img alt="Coordinates" src="https://img.shields.io/badge/tokens-recursive%20coordinates-0f766e">
+</p>
+
+<strong>Compress files and corpora with a shared coordinate universe. Keep
+roundtrip recovery exact.</strong>
+
+</div>
+
+---
 
 CoordCompressCodec is a lossless coordinate representation and compression
 system for text and structured byte data. It learns recurring structures, maps
@@ -17,6 +39,14 @@ generated coordinate tokens back to normal text with a deterministic decoder.
 The goal of this first release is to provide a clean, auditable implementation
 of the coordinate system, with exact decode, a documented file format, and
 reproducible benchmarks.
+
+<table>
+  <tr>
+    <td><strong>0.058</strong><br>payload ratio on Apache logs with a shared universe</td>
+    <td><strong>0.101</strong><br>coordinate symbol ratio on Apache logs</td>
+    <td><strong>Exact</strong><br>decode back to the original bytes</td>
+  </tr>
+</table>
 
 ![Coordinate compression pipeline](docs/assets/coordinate_pipeline.svg)
 
@@ -273,3 +303,11 @@ The main measurements are:
 For small files, storing the universe can dominate size. The intended V1 use
 case is shared-universe compression, corpus compression, and LLM
 training-token reduction experiments.
+
+## License
+
+CoordCompressCodec is released under the
+[CoordCompressCodec Non-Commercial License](LICENSE).
+
+Non-commercial use is permitted. Commercial use requires prior written
+permission from Moustapha Oumar.

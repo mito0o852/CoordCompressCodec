@@ -1,23 +1,40 @@
-# Non-Commercial Research License (Version 1.0)
+CoordCompressCodec Non-Commercial License
+Version 1.0
 
 Copyright (c) 2026 Moustapha Oumar
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to use, copy, modify, and distribute the Software for the following purposes only:
+Permission is granted to use, copy, modify, publish, and distribute this
+software and its documentation for personal, academic, research, evaluation,
+and other non-commercial purposes, subject to the conditions below.
 
-* Personal use;
-* Educational use;
-* Academic research;
-* Non-profit research; and
-* Open scientific collaboration.
+Commercial use is not permitted without prior written permission from
+Moustapha Oumar.
 
-The following activities are **not permitted** without prior written permission from the copyright holder:
+Commercial use includes, but is not limited to:
 
-1. Using the Software or any derivative work for commercial purposes;
-2. Selling, sublicensing, or offering the Software as part of a paid product or service;
-3. Using the Software to provide commercial consulting or hosted services;
-4. Incorporating the Software into proprietary commercial products; or
-5. Any other use primarily intended for commercial advantage or monetary compensation.
+- using the software in, or to develop, a paid product or service;
+- using the software to generate revenue or commercial advantage;
+- using the software for consulting, contracting, or client work;
+- integrating the software into commercial infrastructure, workflows, models,
+  applications, or hosted services;
+- training, fine-tuning, evaluating, or deploying commercial models or systems
+  with the software or derivative works.
 
-Redistributions of the Software or derivative works must include this license and all copyright notices.
+Redistribution is permitted only for non-commercial purposes and only if all
+copies or substantial portions include this license notice and the copyright
+notice above. Modified versions must clearly state that changes were made.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR ITS USE.
+No person or organization may sublicense, sell, rent, lease, or otherwise grant
+commercial rights to this software or derivative works without prior written
+permission from Moustapha Oumar.
+
+This license does not grant rights to use the names, trademarks, logos, or
+personal identity of Moustapha Oumar for endorsement or promotion.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NONINFRINGEMENT. IN NO EVENT
+SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM,
+OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
